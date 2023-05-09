@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800');
+
+body {
+    
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+.main {
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px -5px rgba(0,0,0,0.75);
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    max-width: 800px;
+}
+
+.result-box {
+    background: linear-gradient(0deg, hsl(241, 81%, 54%) 0%, hsl(252, 100%, 67%) 100%);
+    border-radius: 20px;
+    margin: 0;
+    max-width: 50%;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    color: hsl(241, 100%, 87%);
+}
+
+.score-circle {
+    background: linear-gradient(0deg, hsla(241, 72%, 46%, 0) 0%, hsla(256, 76%, 46%, 1) 100%);
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    display: grid;
+    align-content: center;
+}
+
+.score-circle h1 {   
+    font-weight: 800;
+    font-size: 56px;
+    margin: 0;
+}
+
+.score-circle p {
+    color: hsl(241, 100%, 89%);
+    margin: 0;
+}
+
+.text {
+    text-align: center;
+}
+
+.text h3 {
+    font-size: 2rem;
+    padding: 1em 0;
+    margin: 0;
+}
+
+.text p {
+    color: hsl(241, 100%, 89%);
+    padding: 0 4em 4em 4em;
+    margin: 0;
+}
+
+.summary {
+    padding: 25px;
+    margin: auto;
+    width: 75%;
+    max-width: 370px;
+    display: flex;
+    flex-direction: column;  
+}
+
+.summary h3 {
+    margin: 0;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    margin: 1em 0;
+    align-items: center;
+}
+
+.row h4 {
+    width: 200px;
+}
+
+.row p {
+    margin: 18px;
+    color: hsl(224, 30%, 27%);
+    width: 70%;
+    text-align: right;
+}
+
+.row h4::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin: 0 10px;
+}
+
+.reaction {
+    background: hsla(0, 100%, 67%, 0.1);
+    color: hsl(0, 100%, 67%);
+}
+
+.reaction h4::before {
+    background: url(assets/images/icon-reaction.svg) no-repeat;
+}
+
+.memory {
+    background: hsl(39, 100%, 56%, 0.1);
+    color: hsl(39, 100%, 56%);
+}
+
+.memory h4::before {
+    background: url(assets/images/icon-memory.svg) no-repeat;
+}
+
+.verbal {
+    background: hsl(166, 100%, 37%, 0.1);
+    color: hsl(166, 100%, 37%);
+}
+
+.verbal h4::before {
+    background: url(assets/images/icon-verbal.svg) no-repeat;
+}
+
+.visual {
+    background: hsl(234, 85%, 45%, 0.1);
+    color: hsl(234, 85%, 45%);
+}
+
+.visual h4::before {
+    background: url(assets/images/icon-visual.svg) no-repeat;
+}
+
+.hundred {
+    color: hsla(0, 0%, 0%, 0.4);
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    background: hsl(224, 30%, 27%);
+    padding: 1em 0;
+    border-radius: 30px;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    max-width: 400px;
+    
+}
+
+.btn:hover,
+.btn:focus {
+    background: linear-gradient(hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    cursor: pointer;
+}
