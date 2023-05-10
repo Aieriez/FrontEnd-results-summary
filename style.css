@@ -7,13 +7,13 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    place-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .main {
     border-radius: 20px;
     box-shadow: 5px 5px 20px -5px rgba(0,0,0,0.75);
-    margin: auto;
     display: flex;
     flex-direction: row;
     max-width: 800px;
@@ -168,4 +168,8 @@ h2 {
 .btn:focus {
     background: linear-gradient(hsl(241, 81%, 54%), hsl(252, 100%, 67%));
     cursor: pointer;
+}
+
+footer {
+    padding-top: 5%;
 }
